@@ -1,0 +1,59 @@
+﻿@*<div class="container">*@
+<div id="demo" class="carousel slide" data-ride="carousel">
+    <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="~/images/product/fc4c0475-d6e3-42f8-b66d-fc7ba1fc7a1a.jpg" alt="Digger" width="1100" height="500">
+            <br />
+            <br />
+            <div class="carousel-caption">
+                <h3 class="text-dark">DIGGER</h3>
+                <p class="text-dark">The Best Production!</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="~/images/product/a6d27523-e0ed-40c3-803f-d26318a3fc9d.jpg" alt="Chicago" width="1100" height="500">
+            <div class="carousel-caption">
+                <h3>WHEEL LOADER</h3>
+                <p>Agile And Fast In Tight Spaces!</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="~/images/product/b24dec84-d482-4851-8ab9-e1cf9db9a109.jpg" alt="New York" width="1100" height="500">
+            <div class="carousel-caption">
+                <h3>TUNNEL & MINING</h3>
+                <p>Excellent Payload Ratio!</p>
+            </div>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </a>
+</div>
+
+<style type="text/css">
+     /*Make the image fully responsive*/ 
+    .carousel-inner img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .carousel-content {
+        color: black;
+        display: flex;
+        text-align: center;
+    }
+</style>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.carousel').carousel();
+    });
+</script>
+

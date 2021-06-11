@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA33HHlgB40UyNC3gwQIr1fgAAAAACAAAAAAAQZgAAAAEAACAAAAAuaQ1+Vqmujd7Oj2/FMFrMkBkHEHSbp2Zpa6I7Ly+MIQAAAAAOgAAAAAIAACAAAAAh9Y8KngH09bvewqOJLT7o3TYBiaqOJToO/1p30DRuXoAAAAADmopD1Hol2+Kgz3/3cjT0gbpZnm9IrNGXFPzSekduu5LI97GyfXysYG5OMfeK0MIif8ebc4djMpeKjo+nFMnNeUaR55KlNb2r6cgn4UFcJk3Yv+m+nXx7W+KZWS4NR5dojGueTz7OEmpJw2IvGqHdMMaKIz3i/Y2RGBBJJnuX4kAAAAD6SBW1dUY2mWoU4pa13E8wmDC8zCHoFJqe9FyyM6tGKhfw/xYH60WqcnIVUDLf6g6hwmwjEvfTnUuO8mJjGUO4</EncryptedPassword>
+    <History>True|2021-05-28T01:36:59.6941792Z;True|2021-05-28T00:52:03.4747074+02:00;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Data Source=tcp:rsmachinecompanydbserver.database.windows.net,1433%3bInitial Catalog=RSMachineCompany_db%3bUser Id=rami%40rsmachinecompanydbserver%3bPassword=%2a%2aStarramon88%2a%2a</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>

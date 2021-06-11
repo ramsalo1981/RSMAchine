@@ -1,0 +1,81 @@
+﻿@using RSMachine_Utility
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container p-3 bg-white">
+
+
+    <h1>Terms of use</h1>
+    <h3>Welcome to our company</h3>
+    <div>
+        <p>Here as a client you'll see the entire variety and skim about items.</p>
+        <p>
+            Definite data about each machine accessible to you on the site. you can choose the item you like.
+        </p>
+        <p>The subsequent stage is for you to sign in or register to send us a request.</p>
+        <p>At the purpose once we get your request we'll organize a gathering with you that we will mention costs and therefore the number of items you would like to purchase, at that time we sign an agreement and confirm your payment card.</p>
+        <p>We can send items after we get affirmation of the financial transfer from the bank.</p>
+
+    </div>
+    @if (User.IsInRole(WC.AdminRole))
+    {
+<div>
+    <h3>Admin</h3>
+
+    <p>The website provides more options for Admin.</p>
+    <p>Admin can create, update and delete category <a asp-action="Index" asp-controller="Category">List of category</a></p>
+    <p>Admin can create, update and delete Application type <a asp-action="Index" asp-controller="ApplicationType">List of ApplicationType</a></p>
+    <p>Admin can create, update and delete products <a asp-action="Index" asp-controller="Product">List of Product</a></p>
+
+    <p>Initially, he fills in information about available products.</p>
+    <p>He can change the amount of items and prices, as well as add information about current promotions.</p>
+    <p>When an User fills in their shopping cart and sends a request to Admin, this information is directly reflected on the Admins page.<a asp-action="Index" asp-controller="Inquiry">List of Inquiry</a></p>
+    <p>Admin checks the supply of this product available . He then confirms the request and orders a meeting , which may be a separate meeting assigned to every User.</p>
+    <p>When User meets the Admin / seller, he indicates how many construction machines he wants. consistent with that information, Admin updates the customer's request. Admin clicks on the "Convert to cart" button, so he can see the products that are added to the shopping cart.</p>
+    <p>Then Admin can handle the quantity of machines. Then press the green "Continue" button and attend the User information page. Then Users' information is filled in and updated.</p>
+    <p>The User then confirms their solvency there. A credit card verification program is employed for this. Below are the algorithm and test numbers for verification.</p>
+    <div>
+        <h4>Test Card</h4>
+
+        <table class="table table-bordered table-striped table-hover" style="width:100%">
+            <thead>
+                <tr>
+                    <th>
+                        Test Value
+                    </th>
+                    <th>
+                        Card Type
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td width="50%">6304000000000000</td>
+                    <td width="30%">Maestro</td>
+                </tr>
+                <tr>
+                    <td width="50%">5555555555554444</td>
+                    <td width="30%">Mastercard</td>
+                </tr>
+                <tr>
+                    <td width="50%">4111111111111111</td>
+                    <td width="30%">Visa</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <p>If the card is valid then the order is forwarded to the processing, and Admin sees that the order has been created, and orders are displayed on the website.<a asp-action="Index" asp-controller="Order">List of Order</a> </p>
+        <p>Now Admin can attend order list and there he can filter and pagine orders.</p>
+        <p>Filtering based on name, telephone number , order date and email.</p>
+        <p>Then Admin presses the blue button then can see all the details. There, Admin can update something if needed.</p>
+        <p>When the order status becomes "Approved", the Admin can start processing the order. For that, press the "Start processing" button.</p>
+        <p>Thus, the status of orders is updated for "Processing". If now Admin presses the blue button, then go back to the details.</p>
+        <p>On that page, Admin also sees "Transaction Id" which was taken from Braintree when customers' credit cards were processed.</p>
+        <p>If the credit card is confirmed by the bank, Admin presses "Ship order", and the order status is updated to "Shipped".</p>
+    </div>
+</div>
+
+    }
+</div>
